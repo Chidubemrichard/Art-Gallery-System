@@ -1,0 +1,197 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Container Styling */
+.nav-container {
+  position: fixed;
+  top: 5px;
+  background-color: #eeeeee;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  z-index: 100;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  margin-bottom: 15px
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  padding : 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect for Links */
+nav a:hover {
+  background-color: #333;
+  color: #ffffff;
+}
+
+/* Main Content Styling */
+/* Center-align the text in the gallery section */
+.gallery {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px; /* Optional: Limit the width for better readability */
+  padding: 20px;
+}
+
+.gallery h1, .gallery h2{
+  margin-bottom: 40px; /* Add space between elements */
+}
+
+.gallery h2, .gallery p{
+  margin-bottom: 20px; /* Add space between elements */
+}
+
+.gallery h1 {
+  font-size: 6em; /* Adjust size as needed */
+  color: #333;
+  font-family: "Edwardian Script ITC";
+}
+
+.gallery h2 {
+  font-size: 2em;
+  color: #555;
+}
+
+.gallery p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('waves.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Slideshow Container Styling */
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Slide Styling */
+.slide {
+  display: none; /* Hide all slides initially */
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Animation for Fading */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+/* Hide gallery section when artists are visible */
+#gallery {
+  display: block; /* Default: shown initially */
+}
+
+/* Artists Section */
+.artists-container {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh; /* Make the container take up the full viewport height */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
+  grid-template-rows: repeat(2, 1fr); /* Create 2 equal-height rows */
+  justify-items: center; /* Center items horizontally */
+  align-items: center;   /* Center items vertically */
+  gap: 20px; /* Add space between grid items */
+}
+
+/* Centered Message */
+.center-message {
+  grid-column: span 4; /* Span across the entire grid */
+  text-align: center;
+  font-size: 5em;
+  font-weight: bold;
+  font-family: "Edwardian Script ITC";
+  color: brown;
+  margin-bottom: 40px; /* Optional: Add some margin between the message and the artist items */
+}
+
+/* Artist Styling */
+.artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2em;
+  color: brown;
+  width: 250px; /* Define width for each artist item */
+  height: 250px; /* Define height for each artist item */
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for each item */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add some shadow for depth */
+  transition: transform 0.3s ease; /* Add smooth transition effect on hover */
+}
+
+.artist:hover {
+  transform: scale(1.05); /* Slightly scale the item on hover */
+}
+
+/* Artist Image Styling */
+.artist-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Artist Unique Backgrounds */
+#vangogh { background-color: lightgray; }
+#picasso { background-color: darkgray; }
+#davinci { background-color: lightgray; }
+#ross { background-color: darkgray; }
+
+.artist p {
+  font-weight: bold;
+  font-size: 1.2em;
+}

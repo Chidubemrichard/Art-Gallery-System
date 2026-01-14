@@ -1,2 +1,2 @@
 # Art-Gallery-System
-System for displaying artworks
+Using HTML and CSS
